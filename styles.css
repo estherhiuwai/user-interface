@@ -22,3 +22,28 @@ p {
 .bold {
     font-weight: 400;
 }
+
+.addProduct{
+    color: #805251;
+}
+
+.productSubtitle{
+    color: #9A938C;
+}
+
+.price{
+    color: #805251;
+    font-weight: bold;
+}
+
+.productList{
+    display: flex;
+    flex: wrap;
+    padding: 20px;
+}
+
+.productCard{
+    display: flex;
+    flex: wrap;
+    height: 20px;
+}
