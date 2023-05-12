@@ -1,3 +1,16 @@
+header {
+    min-height: 150px;
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    
+
+}
+
+
+
+
+
 h2 {
     font-family: 'Playfair Display', serif;
 }
