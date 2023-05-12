@@ -1,7 +1,7 @@
 header {
-    min-height: 150px;
+    min-height: 100px;
     display: flex;
-    color: #000;
+    background-color: #000;
     justify-content: space-between;
     
 
