@@ -9,3 +9,12 @@
     flex: wrap;
     height: 20px;
 }
+
+header {
+    min-height: 100px;
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    
+
+}
