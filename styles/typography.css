@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Playfair+Display:wght@500&display=swap');
-
-.title {
+h2 {
     font-family: 'Playfair Display', serif;
 }
 
-.text {
+p {
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .bold {
     font-weight: 400;
 }
+
+
+
+
