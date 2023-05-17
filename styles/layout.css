@@ -26,6 +26,21 @@ header {
 footer{
     background-color: #909C86;
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > table{
+    border-spacing: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.address{
+    display: block;
+}
+
+.addressLine{
+    font-size: 20px;
 }
