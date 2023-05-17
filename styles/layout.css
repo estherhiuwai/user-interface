@@ -22,3 +22,10 @@ header {
 .logo{
     justify-self: flex-start;
 }
+
+footer{
+    background-color: #909C86;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
