@@ -11,10 +11,13 @@
 }
 
 header {
-    min-height: 100px;
     display: flex;
-    background-color: #000;
-    justify-content: space-between;
-    
+    background-color: #000000;
+    justify-content: flex-end;
+    flex: wrap;
+    flex-direction: row;
+}
 
+.logo{
+    align-items: flex-start;
 }
