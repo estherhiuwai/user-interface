@@ -50,12 +50,34 @@ footer > table{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-div.sidebyside > div{
+div.sidebyside > div.one{
     grid-column: 2 / span 2;
     align-items: center;
 }
 
-div.sidebyside > img{
+div.sidebyside > img.one{
     grid-column: 6 / span 2;
     align-items: center;
+}
+
+div.sidebyside > div.two{
+    grid-column: 6 / span 2;
+    align-items: center;
+}
+
+div.sidebyside > img.two{
+    grid-column: 2 / span 2;
+    align-items: center;
+}
+
+#foodAllergies{
+    display: flex;
+    justify-content: center;
+}
+
+.index-menu{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex: wrap;
 }
