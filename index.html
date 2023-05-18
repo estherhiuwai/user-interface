@@ -25,26 +25,31 @@
             <img> <!--green overlay-->
             <img> <!--background image-->
         </div>
-        <div>
-            <h2 class="title">Welcome to Dr. Dax Kitchen!</h2>
-            <p>At Dr Dax Kitchen we understand your need for quality food and excellent
-                service. This is why we strive to exceed your expectations every time you
-                enter our beautiful cafe.</p>
-            <img id= "holdingPlates"
-                 src="Images/INDEX/Holding plates.png" width="50%"> <!--dishes-->
+        <div class="sidebyside">
+            <div>
+                <h2 class="title">Welcome to Dr. Dax Kitchen!</h2>
+                <p>At Dr Dax Kitchen we understand your need for quality food and excellent
+                    service. This is why we strive to exceed your expectations every time you
+                    enter our beautiful cafe.
+                </p>
+            </div>
+            <img src="Images/INDEX/Holding plates.png" id= "holdingPlates" width="100%"> <!--dishes-->
         </div>
         <img id ="Dishes"
              src="Images/INDEX/Dishes.jpg" width="100%">
-        <div>
-            <h2 class="title">The menu</h2>
-            <p>At Dr. Dax, we offer a wide selection of delicious gourmet food catered to
-                your individual needs. We also offer a delicious range of freshly made
-                salads and a la carte dishes - all made daily by our experienced chefs.
-                We also serve a large range of roti, baguettes, focaccias, zaatar & pizzas.
-                We truly have something for everyone!</p>
-            <img id ="foodAllergie"
-                 src="Images/INDEX/Food Allergie.png"> <!--dietaries-->
+        <div class="sidebyside">
+            <img src="Images/INDEX/Sandwiches.jpg" width="100%">
+            <div>
+                <h2 class="title">The menu</h2>
+                <p>At Dr. Dax, we offer a wide selection of delicious gourmet food catered to
+                    your individual needs. We also offer a delicious range of freshly made
+                    salads and a la carte dishes - all made daily by our experienced chefs.
+                    We also serve a large range of roti, baguettes, focaccias, zaatar & pizzas.
+                    We truly have something for everyone!
+                </p>    
+            </div>
         </div>
+        <img src="Images/INDEX/Food Allergies.png" id ="foodAllergie"> <!--dietaries-->
         <div>
             <ul>
                 <li><a href="">Breakfast</a></li>
@@ -62,7 +67,7 @@
             <p class="'bold">SALMON BENEDICT - $13.90</p>
             <p>Flaked Atlantic salmon, wilted spinach, poached eggs, bearnaise sauce,
                 fresh dill salad</p>
-            <button>Dine-in Menu</button>
+                <button onclick="window.location.href = 'product-list.html';">Dine-in Menu</button>
         </div>
     </main>
     <footer>

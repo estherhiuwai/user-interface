@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="workshop-styles.css">
+</head>
+<body>
+    <h1>Before</h1>
+    <p>Let's get user input via a form...</p>
+
+    <form action="after.html" onsubmit="return validateForm()">
+        <label for="name">your name:</label>
+        <input type="text" id="name" name="name" pattern="[a-z|A-Z| |-]">
+        <br><br>
+        <label for="description">description:</label>
+        <textarea name="description" id="description" rows="5" cols="30"></textarea>
+        <br><br>
+        <label for="phone">your phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <label for="email">your email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="qty">how many:</label>
+        <input type="number" id="qty" name="qty" step="0.1" min="1">
+        <br><br>
+        <label for="when">when:</label>
+        <input type="date" id="when" name="when">
+        <br><br>
+        <input type="submit" value="submit!">
+    </form>
+</body>
+</html>
