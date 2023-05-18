@@ -44,3 +44,18 @@ footer > table{
 .addressLine{
     font-size: 20px;
 }
+
+.sidebyside{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+div.sidebyside > div{
+    grid-column: 2 / span 2;
+    align-items: center;
+}
+
+div.sidebyside > img{
+    grid-column: 6 / span 2;
+    align-items: center;
+}
