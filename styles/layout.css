@@ -49,7 +49,7 @@ footer > table{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-image: url("/Users/estherl/user-interface/Images/INDEX/wood_texture_small.jpeg");
-    
+    background-repeat: repeat;
 }
 
 div.sidebyside > div.one{
@@ -128,4 +128,8 @@ div.index-menu-text > card.right{
 
 .splash-image{
     width: 100%;
+}
+
+.end-menu{
+    background-image: url("Images/INDEX/Dine_in_BG.png");
 }
