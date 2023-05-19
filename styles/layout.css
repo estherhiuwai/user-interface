@@ -4,15 +4,48 @@ body{
 }
 
 .productList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.productList > card > img{
+    width: 300px;
+}
+
+.trending-products{
     display: flex;
     flex: wrap;
     padding: 20px;
+    min-height: 250px;
 }
 
-.trending{
+.trending-products > figure > img{
+    width: 200px;
+    height: 200px;
+}
+
+.all-products{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding: 20px;
+}
+
+.all-products > aside{
+    grid-column: 1 / span 1;
+}
+
+.all-products > div{
+    grid-column: 2 / span 1;
+}
+
+.trending-item{
     display: flex;
     flex: wrap;
     height: 20px;
+}
+
+.productList > card{
+    width: 1vw;
 }
 
 header {
@@ -138,25 +171,18 @@ div.index-menu-text > card.right{
 
 .checkout-info{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
-.checkout-address{
-    grid-column: 1 / span 2;
+form > div.checkout-address{
+    grid-column: 2 / span 2;
 }
 
-.checkout-payment{
-    grid-column: 3 / span 2;
-}
-
-form > div{
-    width: 20em;
+form > div.checkout-payment{
+    grid-column: 5 / span 2;
 }
 
 form > div > label{
-    width: 5em;
-}
-
-form > div > input{
-    width: 15em;
+    width: 10em;
 }
