@@ -10,7 +10,7 @@
 <body>
     <header>
         <img id='logoNoBackground'
-             src="Images/INDEX/LOGO no Background.png" width="175px" class="logo"> <!--dr dax kitchen logo-->
+             src="Images/INDEX/LOGO no Background.png" width="175px" class="logo">
         <button><img src="" height="50px"></button> <!--search-->
         <button><img src="" height="50px"></button> <!--hamburger menu-->
         <div class ="hamburger">
@@ -22,8 +22,7 @@
     <main>
         <div>
             <h2 class="splashtext" >The flavour of nature</h2>
-            <img> <!--green overlay-->
-            <img> <!--background image-->
+            <img> <!--green overlay and background image-->
         </div>
         <div class="sidebyside">
             <div class="one">
@@ -33,7 +32,7 @@
                     enter our beautiful cafe.
                 </p>
             </div>
-            <img src="Images/INDEX/Holding plates.png" id= "holdingPlates" width="100%" class="one"> <!--dishes-->
+            <img src="Images/INDEX/Holding plates.png" id= "holdingPlates" width="100%" class="one">
         </div>
         <img id ="Dishes"
              src="Images/INDEX/Dishes.jpg" width="100%">
@@ -49,27 +48,39 @@
                 </p>    
             </div>
         </div>
-        <img src="Images/INDEX/Food Allergies.png" id ="foodAllergies"> <!--dietaries-->
-        <div>
-            <ul class="index-menu">
-                <li><a href="">Breakfast</a></li>
-                <li><a href="">Rolls</a></li>
-                <li><a href="">Zaatars</a></li>
-                <li><a href="">Rotis</a></li>
-                <li><a href="">Coffee</a></li>
-                <li><a href="">Desserts</a></li>
-                <li><a href="">Drinks</a></li>
-            </ul>
-            <p class="'bold">EGGS ANY WAY - $9.00</p>
-            <p>Scrambled/ fried/ poached with sourdough toast</p>
-            <p class="'bold">PULLED PORK BENEDICT - $13.90</p>
-            <p>Pulled pork, wilted spinach, poached eggs, bearnaise sauce, pancetta crumb</p>
-            <p class="'bold">SALMON BENEDICT - $13.90</p>
-            <p>Flaked Atlantic salmon, wilted spinach, poached eggs, bearnaise sauce,
-                fresh dill salad</p>
-                <button onclick="window.location.href = 'product-list.html';">Dine-in Menu</button>
+        <img src="Images/INDEX/Food Allergies.png" id ="foodAllergies"> <!--TURN THIS INTO LAYERED IMAGE FOR EASE-->
+        <ul class="index-menu">
+            <li><a href="">Breakfast</a></li>
+            <li><a href="">Rolls</a></li>
+            <li><a href="">Zaatars</a></li>
+            <li><a href="">Rotis</a></li>
+            <li><a href="">Coffee</a></li>
+            <li><a href="">Desserts</a></li>
+            <li><a href="">Drinks</a></li>
+        </ul>
+        <div class="index-menu-text">
+            <card class="left">
+                <p class="'bold">EGGS ANY WAY - $9.00</p>
+                <p>Scrambled/ fried/ poached with sourdough toast</p>
+            </card>
+            <card class="left">
+                <p class="'bold">PULLED PORK BENEDICT - $13.90</p>
+                <p>Pulled pork, wilted spinach, poached eggs, bearnaise sauce, pancetta crumb</p>
+            </card>
+            <card class="right">
+                <p class="'bold">ATLANTIC SALMON BENEDICT - $13.90</p>
+                <p>Flaked Atlantic salmon, wilted spinach, poached eggs, bearnaise sauce,
+                    fresh dill salad</p>
+            </card>
+            <card class="right">
+                <p class="'bold">SWEET POTATO CROQUETTES & AVOCADO - $15.50</p>
+                <p>Crispy fried sweet potato croquettes, field mushroom, grilled haloumi,
+                    blistered cherry tomatoes, lemon labneh, and one poached egg</p>
+            </card>
         </div>
+        <button class="index-dine-in" onclick="window.location.href = 'product-list.html';">Dine-in Menu</button>
     </main>
+    <br><br>
     <footer>
         <table>
             <thead class="bold">
@@ -122,7 +133,7 @@
             <p class="addressLine">30 Royal Parade,</p>
             <p class="addressLine">Parkville VIC 3010</p>
         </div>
-        <img> <!--logo-->
+        <img src="Images/INDEX/LOGO no Background.png"> <!--logo-->
     </footer>
 </body>
 </html>
