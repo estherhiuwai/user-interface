@@ -18,10 +18,9 @@ body{
 header {
     background-color: #000000;
     display: flex;
-    /* flex: wrap; */
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .logo{
@@ -135,4 +134,29 @@ div.index-menu-text > card.right{
 
 .end-menu{
     background-image: url("Images/INDEX/Dine_in_BG.png");
+}
+
+.checkout-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.checkout-address{
+    grid-column: 1 / span 2;
+}
+
+.checkout-payment{
+    grid-column: 3 / span 2;
+}
+
+form > div{
+    width: 20em;
+}
+
+form > div > label{
+    width: 5em;
+}
+
+form > div > input{
+    width: 15em;
 }
