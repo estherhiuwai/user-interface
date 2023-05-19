@@ -3,11 +3,13 @@
     flex: wrap;
     padding: 20px;
 }
+
 .trending{
     display: flex;
     flex: wrap;
     height: 20px;
 }
+
 header {
     background-color: #000000;
     display: flex;
@@ -16,9 +18,11 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+
 .logo{
     justify-self: flex-start;
 }
+
 footer{
     background-color: #909C86;
     color: white;
@@ -31,37 +35,46 @@ footer > table{
     border-spacing: 7px;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .address{
     display: block;
 }
+
 .addressLine{
     font-size: 20px;
 }
+
 .sidebyside{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 div.sidebyside > div.one{
     grid-column: 2 / span 2;
     align-items: center;
 }
+
 div.sidebyside > img.one{
     grid-column: 6 / span 2;
     align-items: center;
 }
+
 div.sidebyside > div.two{
     grid-column: 6 / span 2;
     align-items: center;
 }
+
 div.sidebyside > img.two{
     grid-column: 2 / span 2;
     align-items: center;
 }
+
 #foodAllergies{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
 ul.index-menu{
     list-style-type: none;
     display: flex;
@@ -69,6 +82,7 @@ ul.index-menu{
     justify-content: center;
     font-size: 1.5em;
 }
+
 ul.index-menu > li > a{
     text-decoration: none;
     color: black;
@@ -78,6 +92,7 @@ ul.index-menu > li > a{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;
 }
+
 .index-dine-in{
     display: block;
     margin-left: auto;
@@ -89,11 +104,13 @@ ul.index-menu > li > a{
     font-size: 1.75em;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .index-menu-text{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: flex-start;
 }
+
 div.index-menu-text > card.left{
     grid-column: 2 / span 2;
 }
