@@ -119,3 +119,7 @@ div.index-menu-text > card.left{
 div.index-menu-text > card.right{
     grid-column: 5 / span 2;
 }
+
+.splash-image{
+    width: 100%;
+}
