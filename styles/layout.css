@@ -61,10 +61,6 @@ div.sidebyside > img.two{
     width: 100%;
 }
 
-.end-menu{ /* WHAT IS THIS LOL FIX IT AND MAKE IT MAKE SENSE */
-    background-image: url("Images/INDEX/Dine_in_BG.png");
-}
-
 ul.index-menu{
     list-style-type: none;
     display: flex;
@@ -221,7 +217,42 @@ button > img{
 
 /* ----------------------------------------------------- CHECKOUT START -----------------------------------------------------*/
 
+.checkout-page{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
+.address-payment{
+    width: 60%;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+    border-style: dashed;
+    text-align: center;
+    font-size: 2em;
+    transform: translateX(32%); /* THIS IS JANKY */
+    border-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.confirmationList{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.confirmationList > card{
+    width: 30vw;
+}
+
+.confirmationList > card > img{
+    width: 300px;
+}
+
+td{
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 /* ------------------------------------------------------ CHECKOUT END ------------------------------------------------------*/
 
