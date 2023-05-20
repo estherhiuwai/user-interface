@@ -12,11 +12,12 @@ body{
     width: 300px;
 }
 
-.trending-products{
+div.trending-products{
     display: flex;
     flex: wrap;
     padding: 20px;
     min-height: 250px;
+    box-shadow: 0px 5px 2px grey;
 }
 
 .trending-products > figure > img{
@@ -26,16 +27,33 @@ body{
 
 .all-products{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
     padding: 20px;
 }
 
 .all-products > aside{
     grid-column: 1 / span 1;
+    overflow: scroll;
+    background-color: #D9D9D9;
+}
+
+.all-products > aside > button{
+    width: 80%;
+    height: 75px;
+    margin-right: 10px;
+    background-color: #D9D9D9;
+    border-width: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.all-products > aside > button.active{
+    background-color: #909C86;
 }
 
 .all-products > div{
     grid-column: 2 / span 1;
+    overflow: scroll;
 }
 
 .trending-item{
