@@ -8,25 +8,36 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <button class="address-payment highlight-page">Add address & payment</button>
+    <div class="checkout-header highlight-page">
+        <div>
+            <button class="pickup">Pickup</button>
+            <button class="delivery">Delivery</button>    
+        </div>
+        <button class="address-payment highlight-page" onclick="window.location.href = 'information.html';">
+            Add address & payment</button>    
+    </div>
     <div class="checkout-page">
         <div class="confirmationList">
             <card>
                 <img src="Images/Product list/caffe-latte.jpg">
-                <h2 class="text">Latte</h2>
-                <p class="subtitle">Large, full cream, 1 sugar</p>
-                <p class="highlight">$4.20</p>
+                <div>
+                    <h2 class="text">Latte</h2>
+                    <p class="subtitle">Large, full cream, 1 sugar</p>
+                    <p class="highlight">$4.20</p>
+                </div>
                 <button>x</button>
             </card>
             <card>
                 <img src="Images/Product list/Flat white.png">
-                <h2 class="text">Flat White</h2>
-                <p class="subtitle">Regular, skinny cream, 2 sugar</p>
-                <p class="highlight">$4.50</p>
+                <div>
+                    <h2 class="text">Flat White</h2>
+                    <p class="subtitle">Regular, skinny cream, 2 sugar</p>
+                    <p class="highlight">$4.50</p>
+                </div>
                 <button>x</button>
             </card>
         </div>
-        <div>
+        <div class="fees-list">
             <h1>Your order</h1>
             <table>
                 <tr>
@@ -45,8 +56,8 @@
                 </tr>
             </table>
             <p>Including $0.82 GST</p>
-            <button>Continue Shopping</button>
-            <button>Checkout</button>
+            <button class="secondary">Continue Shopping</button>
+            <button class="primary">Checkout</button>
         </div>
     </div>
 </body>
