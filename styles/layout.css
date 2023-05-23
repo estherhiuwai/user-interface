@@ -270,13 +270,19 @@ button > img{
     width: 60%; /* THESE WORK TOGETHER BUT ARE JANKY */
 }
 
-button.pickup{
+button.pickup-delivery{
     background-color: rgba(red, green, blue, 50%);
     width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    height: 2em;
+    border-width: 0px;
+    border-radius: 5px;
 }
 
-button.delivery{
-    width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
+.checkout-header > div > button.active{
+    background-color: #7B6468;
 }
 
 .checkout-page{
@@ -287,6 +293,7 @@ button.delivery{
 .address-payment{
     width: 60%;
     height: 100px;
+    margin-bottom: 20px;
     color: white;
     border-radius: 10px;
     border-style: dashed;
@@ -327,6 +334,7 @@ button.delivery{
 
 .fees-list{
     grid-column: 3 / span 1;
+    padding-top: 20px;
 }
 
 .checkout-page > div > table > tr > td:last-child{ /* DOESN'T WORK */
