@@ -6,10 +6,10 @@
 
 .title {
     font-family: 'Playfair Display', serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 55px;
+    margin: 0px;
 }
 
 .splashtext{
