@@ -7,6 +7,8 @@
     --background-active: #717f66;
     --white: white;
     --white-active: rgb(238, 237, 237);
+    --aside: #D9D9D9;
+    --aside-active: #b7b6b6;
 }
 
 .price{
