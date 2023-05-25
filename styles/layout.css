@@ -426,12 +426,18 @@ button.secondary{
 
 .checkout-address{
     grid-column: 2;
+    min-width: 100%;
+}
+
+input{
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .checkout-payment{
     grid-column: 4;
-    width: 100%;
+    min-width: 100%;
 }
 
 /* ----------------------------------------------------- INFORMATION END -----------------------------------------------------*/
