@@ -1,21 +1,20 @@
-.highlight{
-    color: #805251;
+:root{
+    --highlight: #805251;
+    --highlight-active: #613939;
+    --subtitle: #9A938C;
+    --subtitle-active: #82776d;
+    --background: #909C86;
+    --background-active: #717f66;
+    --white: white;
+    --white-active: rgb(238, 237, 237);
+}
+
+.price{
+    color: var(--highlight);
 }
 
 .subtitle{
-    color: #9A938C; /* change this colour for product list? */
-}
-
-.background{
-    color: #909C86;
-}
-
-.background-page{
-    background-color: #909C86;
-}
-
-.highlight-page{
-    background-color: #805251;
+    color: var(--subtitle); /* change for trending list? */
 }
 
 .mandatory{

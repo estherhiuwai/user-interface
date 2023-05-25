@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Dr Dax Kitchen</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="checkout-header highlight-page">
+    <div class="checkout-header">
         <div>
             <button class="pickup-delivery">Pickup</button>
             <button class="pickup-delivery">Delivery</button>    
         </div>
-        <button class="address-payment highlight-page" onclick="window.location.href = 'information.html';">
+        <button class="address-payment" onclick="enterInfo()">
             Add address & payment</button>    
+    </div>
+    <div class="checkout-overall">
+        <p>something</p>
     </div>
     <div class="checkout-page">
         <div class="confirmationList">
@@ -23,7 +27,7 @@
                 <div>
                     <h2 class="text">Latte</h2>
                     <p class="subtitle">Large, full cream, 1 sugar</p>
-                    <p class="highlight">$4.20</p>
+                    <p class="price">$4.20</p>
                 </div>
                 <button>x</button>
             </card>
@@ -32,7 +36,7 @@
                 <div>
                     <h2 class="text">Flat White</h2>
                     <p class="subtitle">Regular, skinny cream, 2 sugar</p>
-                    <p class="highlight">$4.50</p>
+                    <p class="price">$4.50</p>
                 </div>
                 <button>x</button>
             </card>
