@@ -415,14 +415,14 @@ button.secondary{
 .checkout-info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    padding-top: 10px;
 }
 
-form > div.checkout-address{
+.checkout-address{
     grid-column: 2 / span 2;
 }
 
-form > div.checkout-payment{
+.checkout-payment{
     grid-column: 5 / span 2;
 }
 
