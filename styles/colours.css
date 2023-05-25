@@ -17,3 +17,7 @@
 .highlight-page{
     background-color: #805251;
 }
+
+.mandatory{
+    color: red;
+}
