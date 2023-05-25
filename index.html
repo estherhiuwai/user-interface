@@ -10,12 +10,13 @@
 <body>
     <header>
         <div>
-            <img src="Images/INDEX/LOGO no Background.png" width="175px" id="logoNoBG">
+            <img src="Images/INDEX/LOGO no Background.png" width="175px">
         </div>
         <div>
-            <button><img src="Images/Product list/Search_Button.png" height="50px"></button>
-            <button><img src="" height="50px"></button> <!--hamburger menu-->
-            <div class ="hamburger">
+            <button class="rect bold">Order</button>
+            <button class="square"><img src="Images/INDEX/Search_Icon.png"></button>
+            <button class="square"><img src="Images/INDEX/Hamburger.png"></button>
+            <div class ="hamburger"> <!--HOW TO IMPLEMENT THIS?-->
                 <span class ="bar"></span>
                 <span class ="bar"></span>
                 <span class ="bar"></span>
@@ -34,10 +35,9 @@
                     enter our beautiful cafe.
                 </p>
             </div>
-            <img src="Images/INDEX/Holding plates.png" id= "holdingPlates" width="100%" class="one">
+            <img src="Images/INDEX/Holding plates.png" width="100%" class="one">
         </div>
-        <img id ="Dishes"
-             src="Images/INDEX/Centre_Banner.jpg" width="100%">
+        <img src="Images/INDEX/Centre_Banner.jpg" width="100%">
         <div class="sidebyside">
             <img src="Images/INDEX/Many_Sandwiches.jpg" width="100%" class="two">
             <div class="two">
@@ -62,24 +62,28 @@
                 <li><a href="">Drinks</a></li>
             </ul>
             <div class="index-menu-text">
-                <card class="left">
-                    <p class="'bold">EGGS ANY WAY - $9.00</p>
-                    <p>Scrambled/ fried/ poached with sourdough toast</p>
-                </card>
-                <card class="left">
-                    <p class="'bold">PULLED PORK BENEDICT - $13.90</p>
-                    <p>Pulled pork, wilted spinach, poached eggs, bearnaise sauce, pancetta crumb</p>
-                </card>
-                <card class="right">
-                    <p class="'bold">ATLANTIC SALMON BENEDICT - $13.90</p>
-                    <p>Flaked Atlantic salmon, wilted spinach, poached eggs, bearnaise sauce,
-                        fresh dill salad</p>
-                </card>
-                <card class="right">
-                    <p class="'bold">SWEET POTATO CROQUETTES & AVOCADO - $15.50</p>
-                    <p>Crispy fried sweet potato croquettes, field mushroom, grilled haloumi,
-                        blistered cherry tomatoes, lemon labneh, and one poached egg</p>
-                </card>
+                <div class="left">
+                    <card>
+                        <p class="'bold">EGGS ANY WAY - $9.00</p>
+                        <p>Scrambled/ fried/ poached with sourdough toast</p>
+                    </card>
+                    <card>
+                        <p class="'bold">PULLED PORK BENEDICT - $13.90</p>
+                        <p>Pulled pork, wilted spinach, poached eggs, bearnaise sauce, pancetta crumb</p>
+                    </card>
+                </div>
+                <div class="right">
+                    <card>
+                        <p class="'bold">ATLANTIC SALMON BENEDICT - $13.90</p>
+                        <p>Flaked Atlantic salmon, wilted spinach, poached eggs, bearnaise sauce,
+                            fresh dill salad</p>
+                    </card>
+                    <card>
+                        <p class="'bold">SWEET POTATO CROQUETTES & AVOCADO - $15.50</p>
+                        <p>Crispy fried sweet potato croquettes, field mushroom, grilled haloumi,
+                            blistered cherry tomatoes, lemon labneh, and one poached egg</p>
+                    </card>
+                </div>
             </div>
             <button class="index-dine-in" onclick="window.location.href = 'product-list.html';">Dine-in Menu</button>
         </div>

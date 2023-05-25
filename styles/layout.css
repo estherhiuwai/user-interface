@@ -19,11 +19,33 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .logo{
     justify-self: flex-start;
+}
+
+header > div > button.rect{
+    background-color: #805251;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border-width: 0px;
+    height: 50px;
+    width: 100px;
+}
+
+header > div > button.square{
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+}
+
+header > div > button.square > img{
+    width: 100%;
+    height: 83%; /* why does this have to be janky */
 }
 
 .splash-image{
@@ -35,6 +57,8 @@ header{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-image: url("Images/INDEX/wood_texture_small.jpeg");
     background-repeat: repeat;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 div.sidebyside > div.one{
@@ -45,8 +69,8 @@ div.sidebyside > div.one{
 
 div.sidebyside > img.one{
     grid-column: 6 / span 2;
-    align-items: center;
-    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;    
 }
 
 div.sidebyside > div.two{
@@ -57,8 +81,8 @@ div.sidebyside > div.two{
 
 div.sidebyside > img.two{
     grid-column: 2 / span 2;
-    align-items: center;
-    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .foodAllergies{
@@ -85,14 +109,13 @@ ul.index-menu > li > a{
 .index-menu-text{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: flex-start;
 }
 
-div.index-menu-text > card.left{
+div.index-menu-text > div.left{
     grid-column: 2 / span 2;
 }
 
-div.index-menu-text > card.right{
+div.index-menu-text > div.right{
     grid-column: 5 / span 2;
 }
 
@@ -114,10 +137,12 @@ footer{
     flex: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer > table{
-    border-spacing: 7px;
+    border-spacing: 40px 5px;
 }
 
 .address{
