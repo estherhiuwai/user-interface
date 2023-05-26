@@ -41,6 +41,12 @@ header > div > button.rect{
     background-color: var(--highlight-active);
 }
 
+@media screen and (max-width: 500px){
+    .rect{
+        display: none;
+    }
+}
+
 header > div > button.square{
     width: 60px;
     height: 60px;
@@ -97,6 +103,20 @@ div.sidebyside > img.two{
     margin-bottom: auto;
 }
 
+@media screen and (max-width: 1100px){
+    div.sidebyside > img{
+        display: none;
+    }
+
+    div.sidebyside > div.one{
+        grid-column: 3 / span 4;
+    }
+
+    div.sidebyside > div.two{
+        grid-column: 3 / span 4;
+    }
+}
+
 .foodAllergies{
     width: 100%;
 }
@@ -147,10 +167,22 @@ footer{
     color: white;
     display: flex;
     flex: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        display: block;
+        padding-left: 20px;
+    }
+
+    footer > table{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 footer > table{
@@ -163,6 +195,16 @@ footer > table{
 
 .addressLine{
     font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+footer > div > p{
+    text-align: center;
+}
+
+footer > div > img{
+    transform: translateX(2%);
 }
 
 /* -------------------------------------------------------- INDEX END --------------------------------------------------------*/
@@ -193,10 +235,35 @@ div.trending-products{
 
 .trending-products::-webkit-scrollbar{
     display: none;
-  }
+}
+
+@media screen and (max-width: 500px){
+    .trending-products > figure{
+        max-width: 225px;
+    }
+    
+    .trending-products > figure > img{
+        min-width: 225px;
+    }
+
+    .trending-products > figure > div{
+        max-width: 225px;
+    }
+
+    .trending-products > figure > div > button{
+        width: 10%;
+    }
+}
 
 .trending-products > figure{
     display: block;
+    min-width: 300px;
+}
+
+.trending-products > figure > img{
+    height: 200px;
+    margin-bottom: 0px;
+    border-radius: 10px;
     min-width: 300px;
 }
 
@@ -215,13 +282,6 @@ div.trending-products{
 .trending-products > figure > div > div{
     display: block;
     padding: 5px 0px 0px 0px;
-}
-
-.trending-products > figure > img{
-    height: 200px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    min-width: 300px;
 }
 
 .trending-products > figure > div > button{
@@ -283,6 +343,11 @@ div.trending-products{
 }
 
 @media screen and (max-width: 950px){
+    .all-products{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    
     .productList{
         grid-template-columns: 1fr;
     }
