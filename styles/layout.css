@@ -256,7 +256,6 @@ div.trending-products{
 .all-products > div{
     grid-column: 2 / span 1;
     overflow: scroll;
-    padding-left: 20px;
     padding-top: 20px;
 }
 
@@ -270,11 +269,34 @@ div.trending-products{
 }
 
 .productList > card{
-    width: 30vw;
+    width: 25vw;
+    display: flex;
+    flex: wrap;
 }
 
 .productList > card > img{
-    width: 300px;
+    width: 175px;
+    height: 175px;
+    margin: 0px 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+}
+
+.productList > card > div{
+    display: block;
+}
+
+.productList > card > div > h2{
+    margin-bottom: 10px;
+}
+
+.productList > card > div > p{
+    margin: 0px;
+    font-size: 1em;
+}
+
+.productList > card > div > p + p{
+    margin-bottom: 10px;
 }
 
 button.add{
