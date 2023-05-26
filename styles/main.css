@@ -26,19 +26,20 @@ holdingPlates{
 }
 
 .toggler{
-      z-index:2;
+      position: fixed;
+      z-index:10;
       right: 20px;
       top: 8px;
       height: 50px;
       width: 50px;
-      position: absolute;
       top: 15px;
       cursor: pointer;
       opacity: 0;
   }
   
   .hamburger{
-      position: absolute;
+      z-index: 5;
+      position: fixed;
       right: 20px;
       top: 8px;
       height: 40px;
@@ -47,6 +48,8 @@ holdingPlates{
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: black;
+      background-size: ;
   }
   
   .hamburger > div{
@@ -96,16 +99,19 @@ holdingPlates{
   
   
   .menu{
+      z-index: 1;
       background: black;
+      top:0;
       width: 0%;
-      height: 100vh;
+      height: 100%;
       transition: all 0.4s ease;
       position: fixed;
+      right:0px;
   }
   
   
   .toggler:checked ~ .menu{
-      width: 30%;
+      width: 300px;
   }
   
   
@@ -120,14 +126,18 @@ holdingPlates{
   
   .menu > div > ul > li{
       list-style: none;
-      padding: 0.5rem;
+      padding: 1rem;
   }
   
   .menu > div > ul > li > a{
       color: white;
       text-decoration: none;
       font-size: 2rem;
-      font-family: Josefin Sans;
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 40px;
+      line-height: 40px;
   }
   
   
@@ -140,3 +150,7 @@ holdingPlates{
   .toggler:checked ~ .menu > div > ul > li > a:hover{
       color: #909c86;
   }
+
+
+
+
