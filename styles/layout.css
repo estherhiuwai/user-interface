@@ -188,6 +188,7 @@ div.trending-products{
     min-height: 250px;
     box-shadow: 0px 5px 2px grey;
     overflow-x: scroll;
+    z-index: 100; /* THIS IS NOT WORKING */
 }
 
 .trending-products::-webkit-scrollbar{
@@ -261,7 +262,7 @@ div.trending-products{
 }
 
 .all-products > div{
-    grid-column: 2 / span 1;
+    grid-column: 2;
     overflow: scroll;
     padding-top: 20px;
 }
@@ -273,6 +274,18 @@ div.trending-products{
 .productList{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1275px){
+    .productList{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .productList{
+        grid-template-columns: 1fr;
+    }
 }
 
 .productList > card{
@@ -388,7 +401,7 @@ button.pickup-delivery{
     border-radius: 10px;
     box-shadow: 5px 5px grey;
     color: black;
-    height: 70vh;
+    height: 85vh;
     width: 80vw;
     display: none;
     z-index: 9999;
@@ -400,13 +413,21 @@ button.pickup-delivery{
     overflow: auto;
 }
 
-button.exitInfo{
-    float: right;
+.exit-info{
+    grid-column: 6;
+    margin-top: 10px;
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.exit-info > img{
+    width: 50px;
+    height: 50px;
 }
 
 .checkout-info{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    grid-template-columns: 3fr 6fr 3fr 6fr 1fr 1fr 1fr;
     padding-top: 10px;
 }
 
@@ -419,6 +440,16 @@ input{
     width: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border-width: 0px;
+    height: 1.5em;
+    font-size: large;
+    background-color: var(--aside);
+}
+
+input:focus{
+    background-color: var(--aside-active);
 }
 
 .checkout-payment{
@@ -449,10 +480,16 @@ input{
 }
 
 .confirmationList > card > button{
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
     border: 0px;
     background-color: transparent;
+    margin-top: 15px;
+}
+
+.confirmationList > card > button > img{
+    width: 25px;
+    height: 25px;
 }
 
 .fees-list{
