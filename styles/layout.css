@@ -34,6 +34,7 @@ header > div > button.rect{
     border-width: 0px;
     height: 50px;
     width: 100px;
+    transform: translateY(-35%);
 }
 
 .rect:hover{
@@ -352,6 +353,50 @@ button.pickup-delivery{
     background-color: var(--highlight-active);
 }
 
+#checkout-overall{
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px grey;
+    color: black;
+    height: 70vh;
+    width: 80vw;
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: auto;
+}
+
+button.exitInfo{
+    float: right;
+}
+
+.checkout-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    padding-top: 10px;
+}
+
+.checkout-address{
+    grid-column: 2;
+    min-width: 100%;
+}
+
+input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.checkout-payment{
+    grid-column: 4;
+    min-width: 100%;
+}
+
 .confirmationList{
     grid-column: 1 / span 2;
     display: flex;
@@ -433,42 +478,3 @@ button.secondary:hover{
 }
 
 /* ------------------------------------------------------ CHECKOUT END ------------------------------------------------------*/
-
-/* ---------------------------------------------------- INFORMATION START ----------------------------------------------------*/
-
-.checkout-overall{
-    background-color: black;
-    color: white;
-    height: 50%;
-    display: none;
-    z-index: 9999;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.checkout-info{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-    padding-top: 10px;
-}
-
-.checkout-address{
-    grid-column: 2;
-    min-width: 100%;
-}
-
-input{
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.checkout-payment{
-    grid-column: 4;
-    min-width: 100%;
-}
-
-/* ----------------------------------------------------- INFORMATION END -----------------------------------------------------*/
