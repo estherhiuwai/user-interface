@@ -27,7 +27,8 @@ holdingPlates{
 
 .toggler{
       z-index:2;
-      right: 10px;
+      right: 20px;
+      top: 8px;
       height: 50px;
       width: 50px;
       position: absolute;
@@ -38,8 +39,8 @@ holdingPlates{
   
   .hamburger{
       position: absolute;
-      right: 10px;
-      top: 0;
+      right: 20px;
+      top: 8px;
       height: 40px;
       width: 40px;
       padding: 0.6rem;
@@ -112,7 +113,7 @@ holdingPlates{
       display: flex;
       flex-direction: column;
       position: fixed;
-      top: 70px;
+      top: 180px;
       padding-left: 10px;    
       visibility: hidden;
   }
@@ -126,7 +127,7 @@ holdingPlates{
       color: white;
       text-decoration: none;
       font-size: 2rem;
-      font-family: playfair;
+      font-family: Josefin Sans;
   }
   
   
