@@ -135,7 +135,7 @@ ul.index-menu > li > a{
     display: flex;
     flex: wrap;
     margin: 20px;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 .index-menu-text{
@@ -182,6 +182,7 @@ footer{
     footer > table{
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -203,8 +204,9 @@ footer > div > p{
     text-align: center;
 }
 
-footer > div > img{
-    transform: translateX(2%);
+footer > img{
+    width: 330px;
+    height: 135px;
 }
 
 /* -------------------------------------------------------- INDEX END --------------------------------------------------------*/
@@ -237,34 +239,15 @@ div.trending-products{
     display: none;
 }
 
-@media screen and (max-width: 500px){
-    .trending-products > figure{
-        max-width: 225px;
-    }
-    
-    .trending-products > figure > img{
-        min-width: 225px;
-    }
-
-    .trending-products > figure > div{
-        max-width: 225px;
-    }
-
-    .trending-products > figure > div > button{
-        width: 10%;
-    }
-}
-
 .trending-products > figure{
     display: block;
-    min-width: 300px;
 }
 
 .trending-products > figure > img{
     height: 200px;
     margin-bottom: 0px;
     border-radius: 10px;
-    min-width: 300px;
+    width: 250px;
 }
 
 .trending-products > figure > div{
@@ -277,6 +260,7 @@ div.trending-products{
     padding-top: 25px;
     padding-left: 5px;
     height: 70px;
+    max-width: 250px;
 }
 
 .trending-products > figure > div > div{
@@ -285,7 +269,7 @@ div.trending-products{
 }
 
 .trending-products > figure > div > button{
-    width: 50%;
+    width: 100px;
     margin-right: 5px;
 }
 
@@ -336,23 +320,6 @@ div.trending-products{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 1275px){
-    .productList{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 950px){
-    .all-products{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-    }
-    
-    .productList{
-        grid-template-columns: 1fr;
-    }
-}
-
 .productList > card{
     width: 25vw;
     display: flex;
@@ -362,7 +329,7 @@ div.trending-products{
 .productList > card > img{
     width: 175px;
     height: 175px;
-    margin: 0px 20px;
+    margin: 5px 20px 0px 20px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, .1);
     border-radius: 20px;
 }
@@ -371,16 +338,20 @@ div.trending-products{
     display: block;
 }
 
-.productList > card > div > h2{
+.productList > card > div > div{
+    height: 120px;
+}
+
+.productList > card > div > div > h2{
     margin-bottom: 10px;
 }
 
-.productList > card > div > p{
+.productList > card > div > div > p{
     margin: 0px;
     font-size: 1em;
 }
 
-.productList > card > div > p + p{
+.productList > card > div > div > p + p{
     margin-bottom: 10px;
 }
 
@@ -403,6 +374,141 @@ button > img{
     height: 0.9em;
     padding-right: 3px;
     background-color: transparent;
+}
+
+.productList > card > div > button > span.big-button{
+    display: block;
+}
+
+.productList > card > div > button > span.small-button{
+    display: none;
+}
+
+@media screen and (max-width: 1275px){
+    .productList{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .productList > card{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .trending-overall{
+        height: 210px;
+    }
+
+    .trending-overall > p{
+        font-size: 25px;
+        padding-top: 5px;
+        padding-left: 30px;
+        margin-bottom: 0px;
+    }
+
+    .trending-products > figure{
+        height: 200px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding-left: 10px;
+        margin-right: 0px;
+    }
+
+    .trending-products > figure > img{
+        height: 100px;
+        width: 125px;
+    }
+
+    .trending-products > figure > div{
+        height: 50px;
+        width: 125px;
+    }
+
+    .trending-products > figure > div > button > img{
+        height: 10px;
+        width: 10px;
+    }
+
+    .trending-products > figure > div > button.add{
+        font-size: 11px;
+        height: 20px;
+        width: 50px;
+        padding-bottom: 5px;
+    }
+
+    .trending-products > figure > div > div > figcaption{
+        font-size: 8px;
+        padding-bottom: 4px;
+        margin-top: -3px;
+    }
+
+    .all-products{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+
+    .all-products > aside > button{
+        font-size: 20px;
+    }
+    
+    .productList{
+        grid-template-columns: 1fr;
+    }
+
+    .productList > card{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .productList > card > img{
+        height: 100px;
+        width: 100px;
+        margin: 0px 15px;
+        padding-top: 15px;
+    }
+
+    .productList > card > div{
+        display: flex;
+    }
+
+    .productList > card > div > div{
+        width: 100px;
+        height: 75px;
+    }
+
+    .productList > card > div > div > h2{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .productList > card > div > div > p{
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .productList > card > div > button > span.big-button{
+        display: none;
+    }
+
+    .productList > card > div > button > span.small-button{
+        display: block;
+    }
+
+    .productList > card > div > button > span > img{
+        height: 10px;
+        width: 10px;
+    }
+
+    .productList > card > div > button.add{
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        padding-bottom: 15px;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
 }
 
 /* ---------------------------------------------------- PRODUCT LIST END ----------------------------------------------------*/
