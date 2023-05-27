@@ -359,7 +359,7 @@ button.add{
     border-width: 0px;
     background-color: var(--highlight);
     color: white;
-    font-size: 1.3em;
+    font-size: 20px;
     padding-top: 5px;
     width: 150px;
     height: 40px;
@@ -371,7 +371,7 @@ button.add{
 }
 
 button > img{
-    height: 0.9em;
+    height: 20px;
     padding-right: 3px;
     background-color: transparent;
 }
