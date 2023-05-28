@@ -113,7 +113,7 @@ div.sidebyside > img.two{
     }
 }
 
-.foodAllergies{
+.food-allergies{
     width: 100%;
 }
 
@@ -190,7 +190,7 @@ footer > table{
     display: block;
 }
 
-.addressLine{
+.address-line{
     font-size: 20px;
     text-align: center;
     margin: 0px;
@@ -313,18 +313,18 @@ div.trending-products{
     display: none;
   }
 
-.productList{
+.product-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.productList > card{
+.product-list > card{
     width: 25vw;
     display: flex;
     flex: wrap;
 }
 
-.productList > card > img{
+.product-list > card > img{
     width: 175px;
     height: 175px;
     margin: 5px 20px 0px 20px;
@@ -332,24 +332,24 @@ div.trending-products{
     border-radius: 20px;
 }
 
-.productList > card > div{
+.product-list > card > div{
     display: block;
 }
 
-.productList > card > div > div{
+.product-list > card > div > div{
     height: 120px;
 }
 
-.productList > card > div > div > h2{
+.product-list > card > div > div > h2{
     margin-bottom: 10px;
 }
 
-.productList > card > div > div > p{
+.product-list > card > div > div > p{
     margin: 0px;
     font-size: 1em;
 }
 
-.productList > card > div > div > p + p{
+.product-list > card > div > div > p + p{
     margin-bottom: 10px;
 }
 
@@ -374,11 +374,11 @@ button.add{
     padding-right: 5px;
 }
 
-.productList > card > div > button > span.big-button{
+.product-list > card > div > button > span.big-button{
     display: block;
 }
 
-.productList > card > div > button > span.small-button{
+.product-list > card > div > button > span.small-button{
     display: none;
 }
 
@@ -415,62 +415,62 @@ button.add{
 }
 
 @media screen and (max-width: 1275px){
-    .productList{
+    .product-list{
         grid-template-columns: 1fr 1fr;
     }
 
-    .productList > card{
+    .product-list > card{
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 950px){
-    .productList > card{
+    .product-list > card{
         margin-top: 0px;
         margin-bottom: 10px;
     }
 
-    .productList > card > img{
+    .product-list > card > img{
         height: 100px;
         width: 100px;
         margin: 0px 15px;
         padding-top: 15px;
     }
 
-    .productList > card > div{
+    .product-list > card > div{
         display: flex;
     }
 
-    .productList > card > div > div{
+    .product-list > card > div > div{
         width: 100px;
         height: 75px;
     }
 
-    .productList > card > div > div > h2{
+    .product-list > card > div > div > h2{
         font-size: 20px;
         margin: 10px 0px;
     }
 
-    .productList > card > div > div > p{
+    .product-list > card > div > div > p{
         font-size: 15px;
         line-height: 150%;
     }
 
-    .productList > card > div > button > span.big-button{
+    .product-list > card > div > button > span.big-button{
         display: none;
     }
 
-    .productList > card > div > button > span.small-button{
+    .product-list > card > div > button > span.small-button{
         display: block;
     }
 
-    .productList > card > div > button > span > img{
+    .product-list > card > div > button > span > img{
         height: 10px;
         width: 10px;
     }
 
-    .productList > card > div > button.add{
+    .product-list > card > div > button.add{
         font-size: 20px;
         height: 30px;
         width: 30px;
@@ -539,7 +539,7 @@ button.add{
         font-size: 18px;
     }
     
-    .productList{
+    .product-list{
         grid-template-columns: 1fr;
     }
 }
@@ -661,7 +661,7 @@ input:focus{
     min-width: 100%;
 }
 
-.confirmationList{
+.confirmation-list{
     grid-column: 1 / span 2;
     display: flex;
     flex: wrap;
@@ -669,21 +669,21 @@ input:focus{
     padding: 20px;
 }
 
-.confirmationList > card{
+.confirmation-list > card{
     width: 35vw;
     display: flex;
     flex: wrap;
 }
 
-.confirmationList > card > img{
+.confirmation-list > card > img{
     width: 200px;
 }
 
-.confirmationList > card > div{
+.confirmation-list > card > div{
     width: 300px;
 }
 
-.confirmationList > card > button{
+.confirmation-list > card > button{
     width: 25px;
     height: 25px;
     border: 0px;
@@ -691,7 +691,7 @@ input:focus{
     margin-top: 15px;
 }
 
-.confirmationList > card > button > img{
+.confirmation-list > card > button > img{
     width: 25px;
     height: 25px;
 }
@@ -748,7 +748,7 @@ button.secondary:hover{
 }
 
 @media screen and (max-width: 1025px){
-    .confirmationList > card{
+    .confirmation-list > card{
         width: 50vw;
     }
 }
@@ -760,7 +760,7 @@ button.secondary:hover{
 }
 
 @media screen and (max-width: 750px){
-    .confirmationList > card{
+    .confirmation-list > card{
         width: 100%;
     }
     

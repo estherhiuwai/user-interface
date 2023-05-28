@@ -15,7 +15,7 @@ holdingPlates{
     transform: rotate(-90deg);
 }
 
-/* .hamburgermenu{
+/* .hamburger-menu{
     margin: 0;
     right:25px;
     padding: 0;
@@ -49,7 +49,7 @@ holdingPlates{
       align-items: center;
   }
   
-.hamburgerholder{
+.hamburger-holder{
     z-index: 3;
     background:black;
     position: fixed;
