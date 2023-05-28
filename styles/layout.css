@@ -88,7 +88,7 @@ div.sidebyside > div.one{
 div.sidebyside > img.one{
     grid-column: 6 / span 2;
     margin-top: auto;
-    margin-bottom: auto;    
+    margin-bottom: auto;
 }
 
 div.sidebyside > div.two{
@@ -108,11 +108,7 @@ div.sidebyside > img.two{
         display: none;
     }
 
-    div.sidebyside > div.one{
-        grid-column: 3 / span 4;
-    }
-
-    div.sidebyside > div.two{
+    div.sidebyside > div.one, div.sidebyside > div.two{
         grid-column: 3 / span 4;
     }
 }
@@ -672,7 +668,7 @@ input:focus{
 }
 
 .confirmationList > card{
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex: wrap;
 }
@@ -747,6 +743,32 @@ button.secondary{
 
 button.secondary:hover{
     background-color: var(--white-active);
+}
+
+@media screen and (max-width: 1025px){
+    .confirmationList > card{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .fees-list > button{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .confirmationList > card{
+        width: 100%;
+    }
+    
+    .checkout-page{
+        display: block;
+    }
+
+    .fees-list{
+        margin-left: 75px;
+    }
 }
 
 /* ------------------------------------------------------ CHECKOUT END ------------------------------------------------------*/
