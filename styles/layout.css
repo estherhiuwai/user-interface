@@ -494,6 +494,10 @@ button.add{
         margin-bottom: 0px;
     }
 
+    div.trending-products{
+        box-shadow: none;
+    }
+
     .trending-products > figure{
         height: 200px;
         margin-left: 0px;
@@ -542,6 +546,37 @@ button.add{
     .product-list{
         grid-template-columns: 1fr;
     }
+}
+
+.indiv-product{
+    display: flex;
+}
+
+.exit-indiv{
+    margin-top: 10px;
+    background-color: transparent;
+    border-width: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.exit-indiv > img{
+    width: 50px;
+    height: 50px;
+}
+
+div.indiv-info{
+    width: 25vw;
+    height: 50vh;
+}
+
+.indiv-info > div{
+    background-color: var(--background);
+    padding: 10px;
+}
+
+.indiv-title{
+    color: white;
 }
 
 /* ---------------------------------------------------- PRODUCT LIST END ----------------------------------------------------*/
@@ -609,7 +644,7 @@ button.pickup-delivery{
     width: 80vw;
     display: none;
     z-index: 9999;
-    position: absolute;
+    position: fixed;
     left: 10%;
     transform: translateX(-50%);
     top: 50%;
