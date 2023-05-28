@@ -295,6 +295,7 @@ div.trending-products{
     background-color: var(--aside);
     border-width: 0px;
     font-size: 1.5em;
+    color: black;
 }
 
 .all-products > aside > button.active{
@@ -370,10 +371,10 @@ button.add{
     background-color: var(--highlight-active);
 }
 
-button > img{
-    height: 20px;
-    padding-right: 3px;
-    background-color: transparent;
+.add-img{
+    max-width: 20px;
+    max-height: 20px;
+    padding-right: 5px;
 }
 
 .productList > card > div > button > span.big-button{
@@ -449,7 +450,7 @@ button > img{
     }
 
     .all-products > aside > button{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .productList{
@@ -506,6 +507,7 @@ button > img{
         width: 30px;
         border-radius: 30px;
         padding-bottom: 15px;
+        padding-left: 5px;
         margin-top: 25px;
         margin-left: 10px;
     }
