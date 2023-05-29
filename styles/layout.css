@@ -555,11 +555,13 @@ button.add{
 }
 
 .indiv-product > img{
-    width: 50%;
+    height: 50vh;
+
 }
 
 .exit-indiv{
-    margin-top: 10px;
+    margin: 0px;
+    padding: 0px;
     background-color: transparent;
     border-width: 0px;
     width: 50px;
@@ -582,6 +584,12 @@ div.indiv-info{
 
 .indiv-title{
     color: white;
+    margin-bottom: 0px;
+}
+
+.indiv-info > div > p{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 /* ---------------------------------------------------- PRODUCT LIST END ----------------------------------------------------*/
