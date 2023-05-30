@@ -7,7 +7,6 @@ function exitInfo(){
 }
 
 function saveInfo(){
-    let tbchanged = document.getElementById("address-payment");
     let userName = document.getElementById("name").value; //this is working
-    tbchanged.innerText = userName;
+    document.getElementById("address-payment").innerHTML = userName; //this isn't working
 }
