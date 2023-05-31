@@ -688,17 +688,18 @@ button.add{
     transform: translateX(-50%);
     top: 50%;
     transform: translateY(-50%);
-    overflow: auto;
+    overflow: hidden;
 }
 
 .indiv-product > img{
     height: 65vh;
-    max-width: 25vw;
+    width: 25vw;
 }
 
 div.indiv-info{
-    min-width: 25vw;
+    width: 25vw;
     background-color: var(--background);
+    overflow: auto;
 }
 
 .indiv-info > div{
@@ -770,6 +771,61 @@ div.indiv-info{
 .indiv-add{
     grid-row: 3;
     grid-column: 2 / span 2;
+}
+
+@media screen and (max-width: 1375px){
+    .indiv-info > div{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 1275px){ /* FIX THIS ONE */
+    .indiv-info{
+        width: 30vw;
+    }
+
+    .indiv-product > img{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .indiv-product{
+        display: block;
+        overflow: auto;
+        height: 80vh;
+        width: 50vw;
+        padding: 0px;
+        min-width: 350px;
+    }
+
+    .indiv-product::-webkit-scrollbar{
+        display: none;
+    }
+
+    .indiv-product > img{
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 0px;
+    }
+
+    .indiv-info{
+        width: 100% !important; /* FIX THIS */
+        min-height: 55vh;
+        padding-bottom: 20px;
+    }
+    
+    .indiv-info > div{
+        grid-template-rows: 20px 1fr 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 50px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .exit-indiv{
+        display: none;
+    }
 }
 
 /* ---------------------------------------------------- PRODUCT LIST END ----------------------------------------------------*/
