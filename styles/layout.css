@@ -351,7 +351,7 @@ div.trending-overall{
 div.trending-products{
     display: flex;
     flex: wrap;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 55px;
     min-height: 250px;
     box-shadow: 0px 5px 2px grey;
     overflow-x: scroll;
@@ -1097,6 +1097,7 @@ button.secondary:hover{
 
 .confirmation-info{
     grid-column: 2;
+    margin-left: 40px;
 }
 
 .confirmation-info > h1{
