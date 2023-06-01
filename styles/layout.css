@@ -364,6 +364,7 @@ div.trending-products{
 
 .trending-products > figure{
     display: block;
+    margin: 10px;
 }
 
 .trending-products > figure > img{
@@ -1081,11 +1082,21 @@ button.secondary:hover{
 /* --------------------------------------------------- CONFIRMATION START ---------------------------------------------------*/
 
 .confirmation-overall{
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.confirmation-img{
+    grid-column: 1;
+}
+
+.confirmation-overall > div > img{
+    width: 100%;
+    height: 100%;
 }
 
 .confirmation-info{
-    display: block;
+    grid-column: 2;
 }
 
 .confirmation-info > h1{
@@ -1102,6 +1113,20 @@ button.secondary:hover{
     border: 1px solid black;
     box-shadow: 0px 5px 10px grey;
     margin-bottom: 20px;
+    display: flex;
+    margin-right: 50px;
+    padding: 5px 20px;
+}
+
+.confirmation-info > div > div > img{
+    width: 70px;
+    height: 50px;
+    margin: 5px 10px;
+    vertical-align: center;
+}
+
+.confirmation-info > div > div > div > p{
+    margin: 5px;
 }
 
 /* ---------------------------------------------------- CONFIRMATION END ----------------------------------------------------*/
