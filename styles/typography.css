@@ -34,3 +34,7 @@ p {
 .bold {
     font-weight: 1000;
 }
+
+.price{
+    font-weight: 500;
+}
