@@ -14,7 +14,7 @@
         </div>
         <div>
             <button class="rect bold" onclick="window.location.href = 'product-list.html';">Order</button>
-            <button class="square"><img src="images/index/search-icon.png"></button>
+            <button class="square" onclick="enterSearch()"><img src="images/index/search-icon.png"></button>
             <button class="square_small"></button>
             <div class ="hamburger-menu">
                 <div class="hamburger-holder"></div>
@@ -159,5 +159,30 @@
         </div>
         <img src="images/index/logo.png" alt="Dr. Dax Kitchen logo">
     </footer>
+    <div id="search-overall">
+        <button class="exit-info"><img src="images/product-list/close-grey.png"></button>
+        <div>
+            <h1 class="bold">Search</h1>
+            <input type="text" id="search" name="search" placeholder="Enter your favourite food">
+            <p>Most searched</p>
+            <div>
+                <div>
+                    <img src="images/product-list/search-icon.png">
+                    <p>Tea</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="images/product-list/search-icon.png">
+                    <p>Latte</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="images/product-list/search-icon.png">
+                    <p>Espresso</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
