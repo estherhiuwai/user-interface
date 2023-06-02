@@ -8,5 +8,13 @@ function exitInfo(){
 
 function saveInfo(){
     let userName = document.getElementById("name").value; //this is working
-    document.getElementById("address-payment").innerHTML = userName; //this isn't working
+    document.getElementById("address-payment").innerHTML = userName; //this isn't working, try with a <p>
+}
+
+function enterLatte(){
+    document.getElementById('indiv-latte').style.display="block";
+}
+
+function exitLatte(){
+    document.getElementById('indiv-latte').style.display="none";
 }

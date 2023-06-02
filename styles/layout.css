@@ -450,6 +450,7 @@ div.trending-products{
     width: 25vw;
     display: flex;
     flex: wrap;
+    margin-bottom: 30px;
 }
 
 .product-list > card > img{
@@ -675,8 +676,11 @@ button.add{
     }
 }
 
-.indiv-product{
+#indiv-latte{
     display: none;
+}
+
+.indiv-product{
     width: 50vw;
     height: 65vh;
     border-width: 5px;
@@ -799,7 +803,6 @@ div.indiv-info{
 
 @media screen and (max-width: 950px){
     .indiv-product{
-        display: none;
         overflow: auto;
         height: 80vh;
         width: 50vw;
@@ -1140,6 +1143,60 @@ button.secondary:hover{
 
 .order-details{
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1350px){
+    .confirmation-info > div > div.order-details{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .confirmation-overall{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .confirmation-overall{
+        display: block;
+    }
+
+    .confirmation-img > img{
+        height: 50vw !important;
+    }
+
+    .confirmation-info > div > div{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .confirmation-img > img{
+        height: 40vh !important;
+    }
+
+    .confirmation-overall{
+        box-shadow: 0px 5px 5px grey;
+    }
+
+    .confirmation-info > h1{
+        font-size: 40px;
+    }
+
+    .confirmation-info > div > h2{
+        font-size: 20px;
+    }
+
+    .confirmation-info > div > div > div > p{
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .order-details > p{
+        font-size: 15px;
+        margin: 0px;
+    }
 }
 
 /* ---------------------------------------------------- CONFIRMATION END ----------------------------------------------------*/
