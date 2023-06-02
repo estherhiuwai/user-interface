@@ -202,9 +202,7 @@ header > div > button.square > img{
 }
 
 main{ /* NOT WORKING */
-    background-image: url("images/index/wood-background-strong.jpg");
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-image: url("/Users/estherl/user-interface/images/index/wood-background.png"); /* NEED RELATIVE PATH */
 }
 
 .sidebyside{
@@ -331,13 +329,13 @@ footer > table{
     margin: 0px;
 }
 
-footer > div > p{
-    text-align: center;
+footer > div{
+    display: flex;
+    
 }
 
-footer > img{
-    width: 330px;
-    height: 135px;
+footer > div > div > p{
+    text-align: center;
 }
 
 /* -------------------------------------------------------- INDEX END --------------------------------------------------------*/
@@ -852,7 +850,7 @@ div.indiv-info{
 /* ------------------------------------------------------ SEARCH START ------------------------------------------------------*/
 
 #search-overall{
-    display: grid; /* CHANGE TO NONE */
+    display: none;
     grid-template-columns: 1fr 100px;
     grid-template-rows: 75px 1fr;
     background-color: white;
@@ -967,7 +965,7 @@ button.pickup-delivery{
     overflow: auto;
 }
 
-.exit-info{
+.exit-hover{
     grid-column: 6;
     margin-top: 10px;
     background-color: var(--grey);
@@ -977,11 +975,11 @@ button.pickup-delivery{
     height: 50px;
 }
 
-.exit-info:hover{
+.exit-hover:hover{
     background-color: var(--grey-active);
 }
 
-.exit-info > img{
+.exit-hover > img{
     box-sizing: border-box;
     width: 45px;
     height: 45px;
