@@ -11,8 +11,8 @@
 <body>
     <div class="checkout-header">
         <div>
-            <button class="pickup-delivery">Pickup</button>
-            <button class="pickup-delivery">Delivery</button>    
+            <button class="pickup-delivery-active" id="pickup" onclick="activateDelivery()">Pickup</button>
+            <button class="pickup-delivery" id="delivery" onclick="activatePickup()">Delivery</button>    
         </div>
         <button id="address-payment" onclick="enterInfo()">Add address & payment</button> 
     </div>
@@ -111,16 +111,22 @@
                 <div>
                     <p>Delivery fee</p>
                     <p>Service fee</p>
-                    <p class="bold">Total</p>
                 </div>
                 <div>
                     <p>$2.99</p>
                     <p>$2.99</p>
-                    <p class="bold">$14.08</p>
                 </div>
             </div>
-            <hr class="fees">
-            <p>Including $0.82 GST</p>
+                <hr class="fees">
+            <div class="fee-details">
+                <div>
+                    <p class="bold">Total</p>
+                </div>
+                <div>
+                    <p class="bold">$14.08</p>
+                </div>
+                <p>Including $0.82 GST</p>
+            </div>
             <button class="secondary" onclick="window.location.href = 'product-list.html';">Continue Shopping</button>
             <button class="primary" onclick="window.location.href='confirmation.html';">Checkout</button>
         </div>

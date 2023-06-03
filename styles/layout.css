@@ -494,6 +494,7 @@ div.trending-products{
 
 .product-list > card > div > div > p + p{
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 button.add{
@@ -916,7 +917,7 @@ div.indiv-info{
     width: 60%; /* THESE WORK TOGETHER BUT ARE JANKY */
 }
 
-button.pickup-delivery{
+button.pickup-delivery-active{
     background-color: var(--white);
     width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
     margin-top: 20px;
@@ -925,10 +926,26 @@ button.pickup-delivery{
     height: 50px;
     border-width: 0px;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+button.pickup-delivery{
+    background-color: var(--highlight-light);
+    border: 1px solid white;
+    width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.pickup-delivery-active:hover{
+    background-color: var(--white-active);
 }
 
 .pickup-delivery:hover{
-    background-color: var(--white-active);
+    background-color: var(--highlight);
 }
 
 .checkout-page{
@@ -1072,6 +1089,11 @@ input:focus{
 .fee-details{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.fee-details > p{
+    margin-top: 0px;
+    font-size: 16px;
 }
 
 .checkout-page > div > table > tr > td:last-child{ /* DOESN'T WORK */
