@@ -1,9 +1,9 @@
 function enterSearch(){
-    document.getElementById('search').style.display="grid";
+    document.getElementById('search-overall').style.display="grid";
 }
 
 function exitSearch(){
-    document.getElementById('search').style.display="none";
+    document.getElementById('search-overall').style.display="none";
 }
 
 function enterLatte(){

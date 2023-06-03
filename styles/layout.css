@@ -203,6 +203,7 @@ header > div > button.square > img{
 
 main{ /* NOT WORKING */
     background-image: url("/Users/estherl/user-interface/images/index/wood-background.png"); /* NEED RELATIVE PATH */
+    width: 100%;
 }
 
 .sidebyside{
@@ -313,10 +314,16 @@ footer{
         margin-right: auto;
         margin-bottom: 20px;
     }
+
+    footer > div{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 footer > table{
-    border-spacing: 40px 5px;
+    border-spacing: 30px 5px;
+    height: 250px;
 }
 
 .address{
@@ -329,13 +336,14 @@ footer > table{
     margin: 0px;
 }
 
-footer > div{
-    display: flex;
-    
-}
-
 footer > div > div > p{
     text-align: center;
+}
+
+footer > div > img{
+    width: 250px;
+    height: 100px;
+    padding-top: 25px;
 }
 
 /* -------------------------------------------------------- INDEX END --------------------------------------------------------*/
