@@ -10,15 +10,6 @@ function enterIndiv(productName){
     document.getElementById(productName).style.display="block";
 }
 
-const mediaQuery = window.matchMedia('(min-width: 950px)')
-function handleTabletChange(e){
-    if (e.matches) {
-        document.getElementById(productName).style.display="block";
-    }
-}
-mediaQuery.addEventListener(handleTabletChange)
-handleTabletChange(mediaQuery)
-
 function exitIndiv(productName){
     document.getElementById(productName).style.display="none";
 }
