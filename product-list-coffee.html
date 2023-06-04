@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List - Dr Dax Kitchen</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class ="hamburger-menu">
+        <div class="hamburger-holder"></div>
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <ul>
+                     <li><a href='index.html'>Home</a></li>
+                     <li><a href='#'>Log in</a></li>
+                     <li><a href='product-list.html'>Menu</a></li>
+                     <li><a href='#'>Gallery</a></li>
+                     <li><a href='#'>About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trending-overall">
+        <p class="title">Trending</p>
+        <div class="trending-products">
+            <figure>
+                <img src="images/product-list/chicken-schnitzel.png" alt="Chicken schnitzel">
+                <div>
+                    <button class="add"><img src="images/product-list/add-cart-icon.png"
+                        class="add-img">Add</button>
+                    <div>
+                        <figcaption>Chicken Schnitzel</figcaption>
+                        <figcaption class="subtitle">(Toasted/ Cold)</figcaption>
+                    </div>
+                </div>
+            </figure>
+            <figure>
+                <img src="images/product-list/croissant.png" alt="Croissant">
+                <div>
+                    <button class="add"><img src="images/product-list/add-cart-icon.png"
+                        class="add-img">Add</button>
+                    <div>
+                        <figcaption>Croissant</figcaption>
+                        <figcaption class="subtitle">(Toasted/ Cold)</figcaption>        
+                    </div>    
+                </div>
+            </figure>
+            <figure>
+                <img src="images/product-list/latte.jpg" alt="Latte">
+                <div>
+                    <button class="add"><img src="images/product-list/add-cart-icon.png"
+                        class="add-img">Add</button>
+                    <div>
+                        <figcaption>Latte</figcaption>
+                        <figcaption class="subtitle">(Hot/ Cold)</figcaption>    
+                    </div>
+                </div>
+            </figure>
+            <figure>
+                <img src="images/product-list/flat-white.png" alt="Flat white">
+                <div>
+                    <button class="add"><img src="images/product-list/add-cart-icon.png"
+                        class="add-img">Add</button>
+                    <div>
+                        <figcaption>Flat White</figcaption>
+                        <figcaption class="subtitle">(Hot/ Cold)</figcaption>        
+                    </div>
+                </div>
+            </figure>
+            <figure>
+                <img src="images/product-list/long-black.png" alt="Flat white">
+                <div>
+                    <button class="add"><img src="images/product-list/add-cart-icon.png"
+                        class="add-img">Add</button>
+                    <div>
+                        <figcaption>Long Black</figcaption>
+                        <figcaption class="subtitle">(Hot/ Cold)</figcaption>        
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <div class="all-products">
+        <aside>
+            <button>Catering</button>
+            <br>
+            <button class="active">Coffee</button>
+            <br>
+            <button>Tea</button>
+            <br>
+            <button>Specialties</button>
+            <br>
+            <button>Breakfast</button>
+            <br>
+            <button>Turkish Rolls</button>
+            <br>
+            <button>Zaatars</button>
+            <br>
+            <button>Rotis</button>
+            <br>
+            <button>Dessert</button>
+            <br>
+            <button>Drinks</button>
+        </aside>
+        <div class="product-list">
+            <card>
+                <img src="images/product-list/latte.jpg" alt="Latte">
+                <div>
+                    <div>
+                        <h2>Latte</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.20</p>
+                    </div>
+                    <button class="add" onclick="enterIndiv('indiv-latte')"><span class="big-button">
+                        <img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/flat-white.png" alt="Flat white">
+                <div>
+                    <div>
+                        <h2>Flat White</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.50</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/long-black.png" alt="Latte">
+                <div>
+                    <div>
+                        <h2>Long black</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.80</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/short-macchiato.png" alt="Latte">
+                <div>
+                    <div>
+                        <h2>Short Macchiato</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/espresso.png" alt="Latte">
+                <div>
+                    <div>
+                        <h2>Double Espresso</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/espresso.png" alt="Latte">
+                <div>
+                    <div>
+                        <h2>Espresso</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+        
+            <card>
+                <img src="images/product-list/chai-latte.png" alt="Latte">
+                <div>
+                    <div>
+                        <h2>Chai Latte</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/matcha-latte.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Matcha Latte</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/picolo.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Picolo</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/mocha.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Mocha</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/turmeric-latte.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Turmeric Latte</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/cappuccino.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Cappuccino</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/milk-shake-chocolate.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Iced Chocolate</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/hot-chocolate.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Hot Chocolate</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+            <card>
+                <img src="images/product-list/long-macchiato.png" alt="Hot chocolate">
+                <div>
+                    <div>
+                        <h2>Long Macchiato</h2>
+                        <p class="subtitle">(Hot/ Cold)</p>
+                        <p class="price">$4.29</p>
+                    </div>
+                    <button class="add">
+                        <span class="big-button"><img src="images/product-list/add-cart-icon.png" class="add-img">Add</span>
+                        <span class="small-button">+</span></button>
+                </div>
+            </card>
+        </div>
+    </div>
+    <div class="floating-buttons">
+        <button><img src="images/product-list/search-icon.png"></button>
+        <button><img src="images/product-list/shopping-cart-icon.png" onclick="window.location.href = 'checkout.html';"></button>
+    </div>
+    <div class="background"></div>
+    <div class="indiv-product" id="indiv-latte">
+        <img src="images/product-list/latte.jpg" alt="Latte">
+        <div class="indiv-info">
+            <div>
+                <button class="exit-indiv" onclick="exitIndiv('indiv-latte')">
+                    <img src="images/product-list/close-grey.png"></button>
+                <div>
+                    <h1 class="bold indiv-title">Latte</h1>
+                    <p class="bold">$4.29</p>
+                    <form>
+                        <div>
+                            <label for="size">Size</label>
+                            <br>
+                            <select name="size" id="size" class="bold">
+                                <option value="small">Small</option>
+                                <option value="regular">Regular</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="milk">Milk</label>
+                            <br>
+                            <select name="milk" id="milk" class="bold">
+                                <option value="full">Full cream</option>
+                                <option value="skinny">Skinny</option>
+                                <option value="soy">Soy milk</option>
+                                <option value="almond">Almond milk</option>
+                                <option value="oat">Oat milk</option>
+                                <option value="lactose">Lactose free</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="sugar">Sugar</label>
+                            <br>
+                            <select name="sugar" id="sugar" class="bold">
+                                <option value="one">1 sugar</option>
+                                <option value="two">2 sugars</option>
+                                <option value="three">3 sugars</option>
+                                <option value="equal">1 Equal</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="strength">Strength</label>
+                            <br>
+                            <select name="strength" id="strength" class="bold">
+                                <option value="strong">Strong</option>
+                                <option value="half">Half strength</option>
+                                <option value="quarter">Quarter strength</option>
+                            </select>
+                            <br><br>
+                        </div>
+                    </form>
+                </div>
+                <button class="add indiv-add" onclick="exitIndiv('indiv-latte')">
+                    <img src="images/product-list/add-cart-icon.png" class="add-img">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
