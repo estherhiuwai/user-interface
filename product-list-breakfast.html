@@ -307,7 +307,7 @@
         </div>
     </div>
     <div class="floating-buttons">
-        <button><img src="images/product-list/search-icon.png"></button>
+        <button><img src="images/product-list/search-icon.png"onclick="enterSearch()"></button>
         <button><img src="images/product-list/shopping-cart-icon.png" onclick="window.location.href = 'checkout.html';"></button>
     </div>
     <div class="background"></div>
@@ -369,6 +369,31 @@
                 </div>
                 <button class="add indiv-add" onclick="exitIndiv('indiv-latte')">
                     <img src="images/product-list/add-cart-icon.png" class="add-img">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="search-overall">
+        <button class="exit-hover" onclick="exitSearch()"><img src="images/product-list/close-grey.png"></button>
+        <div>
+            <h1 class="bold">Search</h1>
+            <input type="text" id="search" name="search" placeholder="Enter your favourite food">
+            <p>Most searched</p>
+            <div>
+                <div>
+                    <img src="images/product-list/search-icon.png">
+                    <p>Tea</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="images/product-list/search-icon.png">
+                    <p>Latte</p>
+                </div>
+                <hr>
+                <div>
+                    <img src="images/product-list/search-icon.png">
+                    <p>Espresso</p>
+                </div>
+                <hr>
             </div>
         </div>
     </div>
