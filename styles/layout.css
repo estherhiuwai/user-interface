@@ -1284,6 +1284,7 @@ button.secondary:hover{
 
 .confirmation-img{
     grid-column: 1;
+    height: 100vh;
 }
 
 .confirmation-overall > div > img{
@@ -1355,8 +1356,8 @@ button.secondary:hover{
         display: block;
     }
 
-    .confirmation-img > img{
-        height: 50vw !important;
+    .confirmation-img{
+        height: 50vh;
     }
 
     .confirmation-info > div > div{
@@ -1365,8 +1366,8 @@ button.secondary:hover{
 }
 
 @media screen and (max-width: 450px){
-    .confirmation-img > img{
-        height: 40vh !important;
+    .confirmation-img{
+        height: 40vh;
     }
 
     .confirmation-overall{
