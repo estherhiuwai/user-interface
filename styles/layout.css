@@ -273,27 +273,71 @@ div.sidebyside > img.two{
     div.sidebyside > div.one, div.sidebyside > div.two{
         grid-column: 3 / span 4;
     }
+
+    .sidebyside > div > h2{
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+    .sidebyside > div > p{
+        font-size: 15px;
+    }
 }
 
 .food-allergies{
     width: 100%;
 }
 
+.index-menu-overall{
+    padding: 0px;
+}
+
 ul.index-menu{
     list-style-type: none;
     display: flex;
-    flex: wrap;
     justify-content: center;
-    font-size: 25px;
+    margin: 0px;
+    margin-top: 10px;
 }
 
 ul.index-menu > li > a{
     text-decoration: none;
     color: black;
     display: flex;
-    flex: wrap;
     margin: 20px;
     font-weight: 500;
+    font-size: 25px;
+}
+
+.small-index-menu > ul > li > a{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.big-index-menu{
+    display: block;
+}
+
+.small-index-menu{
+    display: none;
+}
+
+.small-index-menu > div > li > a{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 875px){
+    .big-index-menu{
+        display: none;
+    }
+    
+    .small-index-menu{
+        display: block;
+    }
+
+    .index-menu-text > div > card > p{
+        font-size: 15px;
+    }
 }
 
 .index-menu-text{
@@ -324,7 +368,6 @@ footer{
     background-color: var(--background);
     color: white;
     display: flex;
-    flex: wrap;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -335,6 +378,7 @@ footer{
     footer{
         display: block;
         padding-left: 20px;
+        padding-right: 10px;
     }
 
     footer > table{
@@ -346,6 +390,17 @@ footer{
     footer > div{
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 575px){
+    footer > table{
+        font-size: 12px;
+    }
+    
+    .footer-other{
+        display: block;
+        text-align: right;
     }
 }
 
@@ -385,14 +440,13 @@ div.trending-overall{
 
 .trending-overall > p{
     padding-left: 60px;
-    padding-top: 15px;
+    padding-top: 25px;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 div.trending-products{
     display: flex;
-    flex: wrap;
     padding: 0px 20px 20px 55px;
     min-height: 250px;
     box-shadow: 0px 5px 2px grey;
@@ -418,7 +472,6 @@ div.trending-products{
 
 .trending-products > figure > div{
     display: flex;
-    flex: wrap;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     box-sizing: border-box;
@@ -491,7 +544,6 @@ div.trending-products{
 .product-list > card{
     width: 25vw;
     display: flex;
-    flex: wrap;
     margin-bottom: 30px;
 }
 
@@ -738,14 +790,6 @@ button.add{
     overflow: hidden;
 }
 
-.background{
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9995;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-}
-
 .indiv-product > img{
     height: 65vh;
     width: 25vw;
@@ -945,7 +989,7 @@ div.indiv-info{
     width: 60%; /* THESE WORK TOGETHER BUT ARE JANKY */
 }
 
-button.pickup-delivery-active{
+button.pickup-delivery{
     background-color: var(--white);
     width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
     margin-top: 20px;
@@ -957,7 +1001,7 @@ button.pickup-delivery-active{
     font-weight: bold;
 }
 
-button.pickup-delivery{
+button.pickup-delivery-active{
     background-color: var(--highlight-light);
     border: 1px solid white;
     width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
@@ -968,11 +1012,11 @@ button.pickup-delivery{
     border-radius: 5px;
 }
 
-.pickup-delivery-active:hover{
+.pickup-delivery:hover{
     background-color: var(--white-active);
 }
 
-.pickup-delivery:hover{
+.pickup-delivery-active:hover{
     background-color: var(--highlight);
 }
 
@@ -1073,7 +1117,6 @@ input:focus{
 .confirmation-list{
     grid-column: 1 / span 2;
     display: flex;
-    flex: wrap;
     flex-direction: column;
     padding: 20px;
 }
@@ -1081,7 +1124,6 @@ input:focus{
 .confirmation-list > card{
     width: 35vw;
     display: flex;
-    flex: wrap;
 }
 
 .confirmation-list > card > img{

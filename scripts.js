@@ -6,12 +6,12 @@ function exitSearch(){
     document.getElementById('search-overall').style.display="none";
 }
 
-function enterLatte(){
-    document.getElementById('indiv-latte').style.display="block";
+function enterIndiv(productName){
+    document.getElementById(productName).style.display="block";
 }
 
-function exitLatte(){
-    document.getElementById('indiv-latte').style.display="none";
+function exitIndiv(productName){
+    document.getElementById(productName).style.display="none";
 }
 
 function enterInfo(){
