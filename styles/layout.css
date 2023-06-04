@@ -203,11 +203,11 @@ header > div > button.square > img{
 
 .fixed-order{
     position: fixed;
+    display: none;
     background-color: var(--highlight);
     border-radius: 50px;
     color: white;
     font-size: 30px;
-    z-index: -1;
     width: 125px;
     height: 60px;
     border-width: 0px;
@@ -221,12 +221,13 @@ header > div > button.square > img{
 
 @media screen and (max-width: 500px){
     .fixed-order{
+        display: block;
         z-index: 9999;
     }
 }
 
-main{ /* NOT WORKING */
-    background-image: url("/Users/estherl/user-interface/images/index/wood-background.png"); /* NEED RELATIVE PATH */
+main{
+    background-image: url("../images/index/wood-background.png");
     width: 100%;
 }
 
@@ -289,7 +290,7 @@ div.sidebyside > img.two{
 }
 
 .index-menu-overall{
-    padding: 0px;
+    padding-bottom: 20px;
 }
 
 ul.index-menu{
@@ -362,6 +363,7 @@ div.index-menu-text > div.right{
     height: 60px;
     text-align: center;
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 footer{
@@ -778,6 +780,7 @@ button.add{
 .indiv-product{
     width: 50vw;
     height: 65vh;
+    display: flex;
     border-width: 5px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px grey;
@@ -895,6 +898,7 @@ div.indiv-info{
         width: 50vw;
         padding: 0px;
         min-width: 350px;
+        display: block;
     }
 
     .indiv-product::-webkit-scrollbar{
