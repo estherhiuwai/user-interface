@@ -1360,6 +1360,10 @@ button.secondary:hover{
         height: 50vh;
     }
 
+    .confirmation-info{
+        margin-bottom: 30px;
+    }
+
     .confirmation-info > div > div{
         margin-right: 50px;
     }
@@ -1368,10 +1372,6 @@ button.secondary:hover{
 @media screen and (max-width: 450px){
     .confirmation-img{
         height: 40vh;
-    }
-
-    .confirmation-overall{
-        box-shadow: 0px 5px 5px grey;
     }
 
     .confirmation-info > h1{
