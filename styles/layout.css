@@ -702,7 +702,7 @@ button.add{
         width: 30px;
         border-radius: 15px;
         margin-top: 25px;
-        margin-left: 10px;
+        margin-left: 5px;
         padding-bottom: 20px;
     }
 }
@@ -721,6 +721,7 @@ button.add{
 
     div.trending-products{
         box-shadow: none;
+        padding-left: 25px;
     }
 
     .trending-products > figure{
@@ -733,12 +734,12 @@ button.add{
 
     .trending-products > figure > img{
         height: 100px;
-        width: 125px;
+        width: 175px;
     }
 
     .trending-products > figure > div{
         height: 50px;
-        width: 125px;
+        width: 175px;
     }
 
     .trending-products > figure > div > button > img{
@@ -873,6 +874,7 @@ div.indiv-info{
 .indiv-add{
     grid-row: 3;
     grid-column: 2 / span 2;
+    justify-self: end;
 }
 
 @media screen and (max-width: 1375px){
@@ -897,7 +899,6 @@ div.indiv-info{
         height: 80vh;
         width: 50vw;
         padding: 0px;
-        min-width: 350px;
         display: block;
     }
 
@@ -913,7 +914,6 @@ div.indiv-info{
 
     .indiv-info{
         width: 100% !important; /* FIX THIS */
-        min-height: 55vh;
         padding-bottom: 20px;
     }
     
@@ -926,7 +926,26 @@ div.indiv-info{
     }
 
     .exit-indiv{
-        display: none;
+        grid-column: 2;
+        justify-self: end;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .indiv-product{
+        width: 80vw;
+        height: 60vh;
+        left: 10%;
+    }
+
+    .indiv-product > img{
+        height: 20vh;
+    }
+
+    .indiv-product > div > div{
+        width: 65vw;
+        margin-left: 5px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
