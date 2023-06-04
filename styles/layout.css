@@ -1079,14 +1079,14 @@ button.pickup-delivery-active{
     z-index: 9999;
     position: fixed;
     left: 10%;
-    transform: translateX(-50%);
     top: 50%;
     transform: translateY(-50%);
     overflow: auto;
+    display: none;
+    grid-template-columns: 1fr 60px;
 }
 
 .exit-hover{
-    grid-column: 6;
     margin-top: 10px;
     background-color: var(--grey);
     border-width: 0px;
@@ -1106,7 +1106,12 @@ button.pickup-delivery-active{
     padding-right: 7px;
 }
 
+#checkout-overall > .exit-hover{
+    grid-column: 2;
+}
+
 .checkout-info{
+    grid-column: 1 / span 2;
     display: grid;
     grid-template-columns: 3fr 6fr 3fr 6fr 1fr 1fr 1fr;
     padding-top: 10px;
@@ -1114,6 +1119,11 @@ button.pickup-delivery-active{
 
 .checkout-address{
     grid-column: 2;
+    width: 100%;
+}
+
+.checkout-payment{
+    grid-column: 4;
     width: 100%;
 }
 
@@ -1130,11 +1140,6 @@ input{
 
 input:focus{
     background-color: var(--grey-active);
-}
-
-.checkout-payment{
-    grid-column: 4;
-    width: 100%;
 }
 
 .confirmation-list{
@@ -1244,12 +1249,23 @@ button.secondary:hover{
 }
 
 @media screen and (max-width: 750px){
+    .checkout-info{
+        display: block;
+        margin: 0px 20px;
+        width: 70vw;
+        padding-bottom: 20px;
+    }
+    
     .confirmation-list > card{
         width: 100%;
     }
     
     .checkout-page{
         display: block;
+    }
+
+    input{
+        width: 70%;
     }
 
     .fees-list{

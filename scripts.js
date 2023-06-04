@@ -15,7 +15,7 @@ function exitIndiv(productName){
 }
 
 function enterInfo(){
-    document.getElementById('checkout-overall').style.display="block";
+    document.getElementById('checkout-overall').style.display="grid";
 }
 
 function exitInfo(){
