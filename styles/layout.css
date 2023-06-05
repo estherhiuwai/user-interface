@@ -67,7 +67,7 @@ header > div > button.square_small{
 
 header > div > button.square > img{
     width: 100%;
-    height: 83%; /* why does this have to be janky */
+    height: 83%;
 }
 
 .toggler{
@@ -1010,12 +1010,12 @@ div.indiv-info{
 
 .checkout-header > div{
     justify-self: center;
-    width: 60%; /* THESE WORK TOGETHER BUT ARE JANKY */
+    width: 60%;
 }
 
 button.pickup-delivery{
     background-color: var(--white);
-    width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
+    width: 48.5%;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 25px;
@@ -1028,7 +1028,7 @@ button.pickup-delivery{
 button.pickup-delivery-active{
     background-color: var(--highlight-light);
     border: 1px solid white;
-    width: 48.5%; /* THESE WORK TOGETHER BUT ARE JANKY */
+    width: 48.5%;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 25px;
@@ -1060,7 +1060,7 @@ button.pickup-delivery-active{
     border-style: dashed;
     text-align: center;
     font-size: 35px;
-    transform: translateX(32%); /* THIS IS JANKY */
+    transform: translateX(32%);
     border-color: white;
 }
 
