@@ -9,7 +9,7 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <div class ="hamburger-menu">
+    <div class ="hamburger-menu"> <!--same hamburger menu as index page-->
         <div class="hamburger-holder"></div>
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
@@ -20,7 +20,7 @@
                      <li><a href='#'>Log in</a></li>
                      <li><a href='product-list.html'>Menu</a></li>
                      <li><a href='#'>Gallery</a></li>
-                     <li><a href='#'>About us</a></li>
+                     <li><a href='#'>About us</a></li> 
                 </ul>
             </div>
         </div>
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="all-products">
-        <aside>
+        <aside> <!--menu list on the left-->
             <button>Catering</button>
             <br>
             <button class="active">Coffee</button>
@@ -107,7 +107,7 @@
             <br>
             <button>Drinks</button>
         </aside>
-        <div class="product-list">
+        <div class="product-list"> <!--product cards on the right-->
             <card>
                 <img src="images/product-list/latte.jpg" alt="Latte">
                 <div>
@@ -306,12 +306,11 @@
             </card>
         </div>
     </div>
-    <div class="floating-buttons">
+    <div class="floating-buttons"> <!--buttons floating on the bottom right-->
         <button><img src="images/product-list/search-icon.png" onclick="enterSearch()"></button>
         <button><img src="images/product-list/shopping-cart-icon.png" onclick="window.location.href = 'checkout.html';"></button>
     </div>
-    <div class="background"></div>
-    <div class="indiv-product" id="indiv-latte">
+    <div class="indiv-product" id="indiv-latte"> <!--hovering page for an individual product-->
         <img src="images/product-list/latte.jpg" alt="Latte">
         <div class="indiv-info">
             <div>
@@ -372,7 +371,7 @@
             </div>
         </div>
     </div>
-    <div id="search-overall">
+    <div id="search-overall"> <!--hovering search page-->
         <button class="exit-hover" onclick="exitSearch()"><img src="images/product-list/close-grey.png"></button>
         <div>
             <h1 class="bold">Search</h1>

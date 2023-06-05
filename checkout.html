@@ -10,13 +10,14 @@
 </head>
 <body>
     <div class="checkout-header">
-        <div>
+        <div> <!--choosing whether the food will be delivered or picked up-->
             <button class="pickup-delivery" id="pickup" onclick="activateDelivery()">Pickup</button>
             <button class="pickup-delivery-active" id="delivery" onclick="activatePickup()">Delivery</button>    
         </div>
-        <button id="address-payment" onclick="enterInfo()"><img src="images/confirmation/edit-icon.png">Add address & payment</button> 
+        <button id="address-payment" onclick="enterInfo()"><img src="images/confirmation/edit-icon.png">Add address & payment</button>
+        <!--entering address and payment information-->
     </div>
-    <div id="checkout-overall">
+    <div id="checkout-overall"> <!--hovering page to input information-->
         <button class="exit-hover" onclick="exitInfo()"><img src="images/product-list/close-grey.png"></button>
         <form class="checkout-info">
             <div class="checkout-address">
@@ -83,7 +84,7 @@
         </form>
     </div>
     <div class="checkout-page">
-        <div class="confirmation-list">
+        <div class="confirmation-list"> <!--list of items purchased-->
             <card>
                 <img src="images/product-list/latte.jpg" alt="Latte">
                 <div>

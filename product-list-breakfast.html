@@ -9,7 +9,7 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <div class ="hamburger-menu">
+    <div class ="hamburger-menu"> <!--same hamburger menu as home page-->
         <div class="hamburger-holder"></div>
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="trending-overall">
+    <div class="trending-overall"> <!--same products in trending section on different pages as it is an overview of the site-->
         <p class="title">Trending</p>
         <div class="trending-products">
             <figure>
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="all-products">
-        <aside>
+        <aside> <!--menu list on the left-->
             <button>Catering</button>
             <br>
             <button onclick="window.location.href='product-list-coffee.html';">Coffee</button>
@@ -107,7 +107,7 @@
             <br>
             <button>Drinks</button>
         </aside>
-        <div class="product-list">
+        <div class="product-list"> <!--product cards on the right-->
             <card>
                 <img src="images/product-list/bec-muffin.jpg" alt="Bacon, egg, and cheese muffin">
                 <div>
@@ -215,73 +215,49 @@
             </card>
         </div>
     </div>
-    <div class="floating-buttons">
+    <div class="floating-buttons"> <!--buttons floating on the bottom right-->
         <button><img src="images/product-list/search-icon.png"onclick="enterSearch()"></button>
         <button><img src="images/product-list/shopping-cart-icon.png" onclick="window.location.href = 'checkout.html';"></button>
     </div>
-    <div class="background"></div>
-    <div class="indiv-product" id="indiv-latte">
-        <img src="images/product-list/latte.jpg" alt="Latte">
+    <div class="indiv-product" id="indiv-bec-muffin"> <!--hovering page for an individual product-->
+        <img src="images/product-list/bec-muffin.jpg" alt="Bacon, egg, and cheese muffin">
         <div class="indiv-info">
             <div>
                 <button class="exit-indiv" onclick="exitIndiv('indiv-latte')">
                     <img src="images/product-list/close-grey.png"></button>
                 <div>
-                    <h1 class="bold indiv-title">Latte</h1>
-                    <p class="bold">$4.29</p>
+                    <h1 class="bold indiv-title">BEC Muffin</h1>
+                    <p class="bold">$4.20</p>
                     <form>
                         <div>
-                            <label for="size">Size</label>
+                            <label for="sauce">Sauce</label>
                             <br>
-                            <select name="size" id="size" class="bold">
-                                <option value="small">Small</option>
-                                <option value="regular">Regular</option>
-                                <option value="large">Large</option>
+                            <select name="sauce" id="sauce" class="bold">
+                                <option value="tomato">Tomato sauce</option>
+                                <option value="bbq">BBQ sauce</option>
+                                <option value="none">No sauce</option>
                             </select>
                             <br><br>
                         </div>
                         <div>
-                            <label for="milk">Milk</label>
+                            <label for="snp">Salt and pepper options</label>
                             <br>
-                            <select name="milk" id="milk" class="bold">
-                                <option value="full">Full cream</option>
-                                <option value="skinny">Skinny</option>
-                                <option value="soy">Soy milk</option>
-                                <option value="almond">Almond milk</option>
-                                <option value="oat">Oat milk</option>
-                                <option value="lactose">Lactose free</option>
-                            </select>
-                            <br><br>
-                        </div>
-                        <div>
-                            <label for="sugar">Sugar</label>
-                            <br>
-                            <select name="sugar" id="sugar" class="bold">
-                                <option value="one">1 sugar</option>
-                                <option value="two">2 sugars</option>
-                                <option value="three">3 sugars</option>
-                                <option value="equal">1 Equal</option>
-                            </select>
-                            <br><br>
-                        </div>
-                        <div>
-                            <label for="strength">Strength</label>
-                            <br>
-                            <select name="strength" id="strength" class="bold">
-                                <option value="strong">Strong</option>
-                                <option value="half">Half strength</option>
-                                <option value="quarter">Quarter strength</option>
+                            <select name="snp" id="snp" class="bold">
+                                <option value="sandp">Salt and pepper</option>
+                                <option value="salt">Salt only</option>
+                                <option value="pepper">Pepper only</option>
+                                <option value="none">None</option>
                             </select>
                             <br><br>
                         </div>
                     </form>
                 </div>
-                <button class="add indiv-add" onclick="exitIndiv('indiv-latte')">
+                <button class="add indiv-add" onclick="exitIndiv('indiv-bec-muffin')">
                     <img src="images/product-list/add-cart-icon.png" class="add-img">Add to cart</button>
             </div>
         </div>
     </div>
-    <div id="search-overall">
+    <div id="search-overall"> <!--hovering search page-->
         <button class="exit-hover" onclick="exitSearch()"><img src="images/product-list/close-grey.png"></button>
         <div>
             <h1 class="bold">Search</h1>
