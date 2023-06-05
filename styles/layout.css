@@ -453,7 +453,6 @@ div.trending-products{
     min-height: 250px;
     box-shadow: 0px 5px 2px grey;
     overflow-x: scroll;
-    z-index: 100; /* THIS IS NOT WORKING */
 }
 
 .trending-products::-webkit-scrollbar{
@@ -781,7 +780,7 @@ button.add{
 .indiv-product{
     width: 50vw;
     height: 65vh;
-    display: flex;
+    display: none;
     border-width: 5px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px grey;
@@ -883,7 +882,7 @@ div.indiv-info{
     }
 }
 
-@media screen and (max-width: 1275px){ /* FIX THIS ONE */
+@media screen and (max-width: 1275px){
     .indiv-info{
         width: 30vw;
     }
@@ -913,7 +912,7 @@ div.indiv-info{
     }
 
     .indiv-info{
-        width: 100% !important; /* FIX THIS */
+        width: 100% !important;
         padding-bottom: 20px;
     }
     
@@ -1200,10 +1199,6 @@ input:focus{
 .fee-details > p{
     margin-top: 0px;
     font-size: 16px;
-}
-
-.checkout-page > div > table > tr > td:last-child{ /* DOESN'T WORK */
-    text-align: right;
 }
 
 .fees{
