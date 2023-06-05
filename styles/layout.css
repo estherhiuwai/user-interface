@@ -991,9 +991,10 @@ div.indiv-info{
 }
 
 #search-overall > div > div > div > img{
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 30px;
     transform: translateY(-20%);
+    padding-right: 10px;
 }
 
 /* ------------------------------------------------------- SEARCH END -------------------------------------------------------*/
@@ -1065,6 +1066,12 @@ button.pickup-delivery-active{
 
 #address-payment:hover{
     background-color: var(--highlight-active);
+}
+
+#address-payment > img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
 }
 
 #checkout-overall{
@@ -1249,6 +1256,16 @@ button.secondary:hover{
 }
 
 @media screen and (max-width: 750px){
+    #address-payment{
+        font-size: 25px;
+    }
+
+    #address-payment > img{
+        width: 22px;
+        height: 22px;
+        padding-right: 10px;
+    }
+    
     .checkout-info{
         display: block;
         margin: 0px 20px;
